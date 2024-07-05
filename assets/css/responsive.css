@@ -1,0 +1,98 @@
+/* X-Small devices */
+@media (max-width: 575.98px) {
+}
+
+/* Small devices */
+@media (max-width: 767.98px) {
+  .main-content {
+    display: block;
+    background-image: linear-gradient(
+      110.5deg,
+      rgba(248, 196, 249, 0.66) 22.8%,
+      rgba(253, 122, 4, 0.15) 64.6%
+    );
+  }
+  body {
+    background-image: linear-gradient(
+      110.5deg,
+      rgba(248, 196, 249, 0.66) 22.8%,
+      rgba(253, 122, 4, 0.15) 64.6%
+    );
+  }
+  .header {
+    display: none;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .play {
+    flex-direction: column;
+  }
+
+  .dash-board {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(
+      110.5deg,
+      rgba(248, 196, 249, 0.66) 22.8%,
+      rgba(253, 122, 4, 0.15) 64.6%
+    );
+  }
+
+  .cd {
+    margin-top: 20px;
+  }
+
+  .progress {
+    width: 70%;
+  }
+
+  .control {
+    margin-top: 30px;
+  }
+
+  .track-list {
+    padding: 10px;
+    margin-top: 510px;
+  }
+
+  .track-list__menu {
+    height: unset;
+    overflow-y: unset;
+  }
+
+  .track-list__menu .play-list__song.active {
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+  }
+
+  .track-list__title {
+    display: none;
+  }
+
+  .track-list__row {
+    display: none;
+  }
+
+  .track-list__text {
+    margin-top: 0;
+  }
+}
+
+/* Medium devices  */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices */
+@media (max-width: 1199.98px) {
+}

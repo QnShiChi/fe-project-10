@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Styles css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Grid css -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <div class="side-bar">
+            <div class="user-group">
+              <img
+                src="./assets/icon/icon-1.svg"
+                alt=""
+                class="user-group__icon"
+              />
+
+              <div class="user-group__avatar-wrap">
+                <img
+                  src="./assets/img/avatar-1.jpg"
+                  alt=""
+                  class="user-group__avatar"
+                />
+              </div>
+            </div>
+            <div class="separate"></div>
+            <!-- Navbar -->
+            <nav class="navbar">
+              <!-- Navbar List -->
+              <ul class="navbar__list">
+                <li class="navbar__item">
+                  <a href="#!" class="navbar__link">
+                    <img
+                      src="./assets/icon/clock.svg"
+                      alt=""
+                      class="navbar__icon"
+                    />
+                  </a>
+                </li>
+                <li class="navbar__item active">
+                  <a href="#!" class="navbar__link">
+                    <img
+                      src="./assets/icon/headphone.svg"
+                      alt=""
+                      class="navbar__icon"
+                    />
+                  </a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#!" class="navbar__link">
+                    <img
+                      src="./assets/icon/heart.svg"
+                      alt=""
+                      class="navbar__icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- Setting group -->
+            <div class="setting-group">
+              <button class="setting-group__item">
+                <img src="./assets/icon/setting.svg" alt="" />
+              </button>
+              <div class="setting-group__item">
+                <a href="#!">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.4837 15.171C17.4925 15.5339 17.4296 15.8949 17.2988 16.2335C17.168 16.5721 16.9718 16.8816 16.7213 17.1443C16.4709 17.407 16.1711 17.6178 15.8391 17.7646C15.5072 17.9115 15.1496 17.9914 14.7867 18H5.82768C5.63469 17.9881 5.45422 17.9004 5.3257 17.756C5.19717 17.6115 5.13101 17.4221 5.14168 17.229C5.13101 17.0359 5.19717 16.8465 5.3257 16.702C5.45422 16.5576 5.63469 16.4699 5.82768 16.458H14.7867C15.133 16.4625 15.467 16.3297 15.7155 16.0884C15.9641 15.8472 16.1069 15.5173 16.1127 15.171V2.829C16.1066 2.48287 15.9637 2.15323 15.7152 1.91222C15.4667 1.67121 15.1328 1.53845 14.7867 1.543H5.82768C5.63893 1.52042 5.46501 1.42944 5.33883 1.28726C5.21265 1.14509 5.14296 0.961592 5.14296 0.7715C5.14296 0.581408 5.21265 0.397911 5.33883 0.255737C5.46501 0.113564 5.63893 0.0225773 5.82768 0H14.7867C15.1498 0.0081768 15.5078 0.0878716 15.8401 0.234524C16.1724 0.381176 16.4725 0.591909 16.7233 0.854666C16.974 1.11742 17.1705 1.42705 17.3015 1.76583C17.4325 2.1046 17.4954 2.46589 17.4867 2.829L17.4837 15.171ZM10.8497 9.823H3.14968L5.94968 12.623C6.02112 12.695 6.07767 12.7804 6.11611 12.8743C6.15454 12.9682 6.17411 13.0687 6.17369 13.1702C6.17327 13.2716 6.15288 13.372 6.11367 13.4656C6.07446 13.5591 6.01721 13.6441 5.94518 13.7155C5.79971 13.8598 5.60288 13.9404 5.398 13.9395C5.19311 13.9387 4.99696 13.8565 4.85268 13.711L0.738678 9.6C0.666957 9.52831 0.610064 9.44319 0.571247 9.34951C0.53243 9.25582 0.512451 9.15541 0.512451 9.054C0.512451 8.95259 0.53243 8.85218 0.571247 8.75849C0.610064 8.66481 0.666957 8.57969 0.738678 8.508L4.85268 4.392C4.92371 4.31765 5.00889 4.25823 5.1032 4.21725C5.19752 4.17627 5.29907 4.15454 5.40189 4.15335C5.50472 4.15215 5.60675 4.17151 5.70199 4.21029C5.79723 4.24906 5.88376 4.30648 5.95651 4.37916C6.02926 4.45184 6.08675 4.53832 6.12562 4.63352C6.16448 4.72873 6.18393 4.83074 6.18283 4.93357C6.18173 5.0364 6.16009 5.13796 6.1192 5.23232C6.0783 5.32667 6.01897 5.4119 5.94468 5.483L3.14468 8.283H10.8447C11.1007 8.283 11.3077 8.629 11.3077 9.054C11.3077 9.479 11.1057 9.823 10.8497 9.823Z"
+                      fill="black"
+                      fill-opacity="0.45"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Hero -->
+        <section class="hero">
+          <h1 class="hero__heading">Quoc Nhat's Music Player</h1>
+          <div class="choose-bar">
+            <span class="choose-bar__text">Top-chart</span>
+            <button class="choose-bar__choose">
+              <span>Week</span>
+              <img src="./assets/icon/arrow-down.svg" alt="" />
+            </button>
+          </div>
+          <!-- Top chart list -->
+          <div class="top-chart__list">
+            <!-- Item 1 -->
+            <article class="top-chart__item">
+              <div class="top-chart__item-wrap">
+                <img
+                  src="./assets/img/top-chart-1.jpg"
+                  alt=""
+                  class="top-chart__item-thumb"
+                />
+              </div>
+              <h4 class="top-chart__item-title">Son Tung M-TP</h4>
+              <p class="top-chart__item-desc">
+                Radiohead, <strong>2001</strong>
+              </p>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="top-chart__item">
+              <div class="top-chart__item-wrap">
+                <img
+                  src="./assets/img/top-chart-2.jpg"
+                  alt=""
+                  class="top-chart__item-thumb"
+                />
+              </div>
+              <h4 class="top-chart__item-title">Son Tung M-TP</h4>
+              <p class="top-chart__item-desc">
+                Radiohead, <strong>2004</strong>
+              </p>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="top-chart__item">
+              <div class="top-chart__item-wrap">
+                <img
+                  src="./assets/img/top-chart-3.jpg"
+                  alt=""
+                  class="top-chart__item-thumb"
+                />
+              </div>
+              <h4 class="top-chart__item-title">Son Tung M-TP</h4>
+              <p class="top-chart__item-desc">
+                Pink Floyd, <strong>1994</strong>
+              </p>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="top-chart__item">
+              <div class="top-chart__item-wrap">
+                <img
+                  src="./assets/img/top-chart-4.png"
+                  alt=""
+                  class="top-chart__item-thumb"
+                />
+              </div>
+              <h4 class="top-chart__item-title">Son Tung M-TP</h4>
+              <p class="top-chart__item-desc">
+                Sky Tour, <strong>2008</strong>
+              </p>
+            </article>
+          </div>
+
+          <h3 class="hero__text">You may like</h3>
+          <div class="play-list__wrap">
+            <!-- Play list -->
+            <div class="play-list">
+              <!-- Song -->
+            </div>
+          </div>
+        </section>
+        <div class="play">
+          <!-- DashBoard -->
+          <section class="dash-board">
+            <h3 class="dash-board__title">Now playing</h3>
+
+            <!-- CD -->
+            <div class="cd">
+              <img class="cd-thumb" src="" alt="" />
+            </div>
+
+            <!-- Song info -->
+            <div class="song-info">
+              <h4 class="song-info__name"></h4>
+              <h2 class="song-info__singer"></h2>
+              <img
+                class="song-info__decor"
+                src="./assets/icon/decor-1.svg"
+                alt=""
+              />
+              <img
+                class="song-info__decor"
+                src="./assets/icon/decor-2.svg"
+                alt=""
+              />
+            </div>
+
+            <input
+              id="progress"
+              class="progress"
+              type="range"
+              value="0"
+              step="1"
+              min="0"
+              max="100"
+            />
+            <!-- Audio -->
+            <audio id="audio" src=""></audio>
+
+            <!-- Control -->
+            <div class="control">
+              <div class="btn btn-random">
+                <img src="./assets/icon/random-btn.svg" alt="" />
+              </div>
+              <div class="btn btn-prev">
+                <img src="./assets/icon/prev-btn.svg" alt="" />
+              </div>
+              <div class="btn btn-toggle-play">
+                <img
+                  class="pause-btn"
+                  src="./assets/icon/pause-btn.svg"
+                  alt=""
+                />
+                <img class="play-btn" src="./assets/icon/play-btn.svg" alt="" />
+              </div>
+              <div class="btn btn-next">
+                <img src="./assets/icon/next-btn.svg" alt="" />
+              </div>
+              <div class="btn btn-repeat">
+                <img src="./assets/icon/repeat-btn.svg" alt="" />
+              </div>
+            </div>
+          </section>
+
+          <!-- Track list -->
+          <section class="track-list">
+            <h3 class="track-list__title">Track list</h3>
+
+            <div class="track-list__row">
+              <div class="btn btn-random">
+                <img src="./assets/icon/random-btn.svg" alt="" />
+              </div>
+
+              <div class="btn btn-repeat">
+                <img src="./assets/icon/repeat-btn.svg" alt="" />
+              </div>
+            </div>
+
+            <span class="track-list__text">Playing next</span>
+
+            <div class="track-list__menu">
+              <!-- Play list -->
+              <div class="play-list">
+                <!-- Song -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
